@@ -4,17 +4,19 @@ namespace tomek_help
 {
     class Program
     {
+        public struct Punkt
+        {
+            public int x;
+            public int y;
+        }
         static void Main(string[] args)
         {
-            void Method(ref int refArgument)
-            {
-                refArgument = refArgument + 1;
-				System.Console.WriteLine(refArgument);
-            }
+            Punkt punktA;
 
-            int number = 1;
-            Method(ref number);
-            Console.WriteLine(number);
+            punktA.x = 0;
+            punktA.y = 0;
+
+            Console.WriteLine(punktA.x + "," + punktA.y);
 
 
 
